@@ -68,9 +68,9 @@ COPY docker/server/scripts/ /scripts/
 RUN chmod 755 /scripts/* && \
     crontab /etc/crontab
 
-VOLUME /var/www/html/settings
-VOLUME /var/www/html/results
-VOLUME /var/www/html/logs
+# VOLUME /var/www/html/settings
+# VOLUME /var/www/html/results
+# VOLUME /var/www/html/logs
 
 EXPOSE 80 443
 
